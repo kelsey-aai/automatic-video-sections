@@ -85,7 +85,7 @@ TIMESTAMPS:
 Both are constants at the top of `main.py`:
 
 - **`LLM_MODEL`** — which model rewrites the headlines. Defaults to `claude-sonnet-4-6`; swap for any ID on the [available models list](https://www.assemblyai.com/docs/llm-gateway/available-models).
-- **`speech_models`** — set to `["universal-3-5-pro", "universal-2"]`. Universal-3.5 Pro handles its 18 languages and Universal-2 catches everything else, for 99 in total. Pin it explicitly rather than relying on the account default, which can change. See [selecting a speech model](https://www.assemblyai.com/docs/pre-recorded-audio/select-the-speech-model).
+- **`speech_models`** — set to `["assemblyai-stt-3-7", "universal-2"]`. AssemblyAI-STT-3.7 handles its 32 languages and Universal-2 catches everything else, for 99 in total. Pin it explicitly rather than relying on the account default, which can change. See [selecting a speech model](https://www.assemblyai.com/docs/pre-recorded-audio/select-the-speech-model).
 
 `summary_type` accepts `paragraph` (the default here) or `bullets`. There is also an optional `effort` field, `low` by default, worth raising to `medium` for long or multilingual audio.
 

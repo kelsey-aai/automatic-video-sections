@@ -58,9 +58,9 @@ def transcribe(audio_url):
     """ transcribe the audio and request topic sections via Speech Understanding """
     data = {
         "audio_url": audio_url,
-        # plural array on pre-recorded audio. universal-3-5-pro handles its 18
+        # plural array on pre-recorded audio. assemblyai-stt-3-7 handles its 32
         # languages; universal-2 catches everything else, for 99 in total.
-        "speech_models": ["universal-3-5-pro", "universal-2"],
+        "speech_models": ["assemblyai-stt-3-7", "universal-2"],
         # Summarization replaces the deprecated auto_chapters parameter. it returns
         # the transcript split into ordered topic sections with timestamps.
         "speech_understanding": {
